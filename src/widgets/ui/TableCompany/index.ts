@@ -1,0 +1,1 @@
+export {TableCompany} from "./TableCompany"

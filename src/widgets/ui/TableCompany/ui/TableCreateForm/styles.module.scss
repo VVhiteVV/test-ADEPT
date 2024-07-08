@@ -1,0 +1,19 @@
+@import "shared/assets/styles/mixins";
+
+.TableCreateForm{
+  width: 100%;
+  .Flex{
+   @include flex-horizontal-center;
+    gap: 8px;
+    background-color: transparent;
+    .buttons{
+      margin-right: 8px;
+      @include flex-horizontal-center;
+      gap: 8px;
+      background-color: transparent;
+    }
+    button{
+      margin: 0;
+    }
+  }
+}

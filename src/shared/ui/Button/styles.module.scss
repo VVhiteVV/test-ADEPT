@@ -1,0 +1,55 @@
+@import "shared/assets/styles/mixins";
+
+.Button{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $white;
+    background-color: $purple;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+  &.red{
+    background-color: $red;
+    &:hover {
+      background-color: $red-light;
+    }
+  }
+  &.green{
+    background-color: $green;
+    &:hover {
+      background-color: $green-light;
+    }
+  }
+  &.orange{
+    background-color: $orange;
+    &:hover {
+      background-color: $orange-light;
+    }
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+  }
+  &:hover {
+    background-color: $dark-purple;
+    border-color: $dark-purple;
+  }
+  &:active {
+    background-color: $dark-purple !important;
+    border-color: $dark-purple !important;
+  }
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+}

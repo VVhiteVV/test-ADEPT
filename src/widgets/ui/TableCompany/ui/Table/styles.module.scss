@@ -1,0 +1,13 @@
+@import "shared/assets/styles/colors";
+.Table{
+  overflow-y: scroll;
+  height: 400px;
+  background-color: $black;
+  th{
+    color: $white !important;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+@import "shared/assets/styles/colors";
+
+
+.row {
+  border: 1px solid $black;
+  &.selected{
+    &,td{
+      background-color: $grey-light !important;
+    }
+  }
+}
